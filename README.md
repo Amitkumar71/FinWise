@@ -1,2 +1,2 @@
-# Idea-no.2
-Let's win again with new idea.
+# FinWise
+A Finance/Expense manager app that uses AA API's.

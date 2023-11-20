@@ -8,7 +8,7 @@ const Landing = () => {
         <div className={styles.content}>
           <img src={"/photu-2.png"} alt="logo" />
           <div className={styles.data}>
-          <h1>Be painfully aware.</h1>
+          <h1>Auto-Pilot Your Finances with Finwise</h1>
           <p>Finwise securely connects to your Bank accounts and gives a clear picture of your finances. So you can make better decisions and lead a healthier financial life.</p>
           </div>
           <div className={styles.QrCode}>

@@ -1,7 +1,7 @@
 /* Landing.module.css */
 .landing {
     position: relative;
-    height: 90vh;
+    height: 100vh;
     background: url('./bg_image.png') center/cover no-repeat;
     display: flex;
     justify-content: center;
@@ -14,6 +14,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -33,13 +34,27 @@
   }
   
   .QrCode img{
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+  }
+  .QrCode img:hover{
+    opacity: 1;
+  }
+
+  .QrCode{
+    display: flex;
+    flex-direction: column;
     position: absolute;
     bottom: 5px;
     left: 40px;
-    height: 125px;
-    width: 125px;
-    z-index: 1;
+    height: 40px;
+    width: 15%;
     border: #DDDFE9 10px solid;
     border-radius: 10px;
   }
+
+  .QrCode:hover img{
+    opacity: 1;
+}
   

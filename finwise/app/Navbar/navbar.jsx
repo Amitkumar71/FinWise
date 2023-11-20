@@ -7,8 +7,10 @@ export default function Navbar() {
     <>
     <nav className="navbar">
     <div className="logo">
-        <img src="/logo.png" />
+      <div className='nav-left'>
+        <img src="/money.svg" />
         <Link href="/">Finwise</Link>
+      </div>
         </div> 
         <div className='nav-right'>
       <Link href="/">

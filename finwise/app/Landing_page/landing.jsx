@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <div className={styles.landing}>
         <div className={styles.content}>
-          <img src={"/photu.png"} alt="logo" />
+          <img src={"/photu-2.png"} alt="logo" />
           <div className={styles.data}>
           <h1>Be painfully aware.</h1>
           <p>Finwise securely connects to your Bank accounts and gives a clear picture of your finances. So you can make better decisions and lead a healthier financial life.</p>

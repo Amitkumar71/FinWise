@@ -25,9 +25,10 @@
   }
   .content .data p{
     Font-size: 18px;
+    margin-top: 25px;
   }
   .content img{
-    height: 60vh;
+    height: 50vh;
     margin-top:-5%;
   }
   

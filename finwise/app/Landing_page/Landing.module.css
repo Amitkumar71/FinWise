@@ -1,7 +1,10 @@
 /* Landing.module.css */
+
+.body{
+  overflow: hidden;
+}
 .landing {
     position: relative;
-    height: 100vh;
     background: url('./bg_image.png') center/cover no-repeat;
     display: flex;
     justify-content: center;
@@ -29,32 +32,58 @@
     margin-top: 25px;
   }
   .content img{
-    height: 50vh;
+    height: 53vh;
     margin-top:-5%;
   }
   
-  .QrCode img{
-    border-radius: 10px;
-    transition: all 0.5s ease-in-out;
-    opacity: 0;
-  }
-  .QrCode img:hover{
-    opacity: 1;
-  }
-
   .QrCode{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     bottom: 5px;
-    left: 40px;
+    right: 40%;
     height: 40px;
     width: 15%;
-    border: #DDDFE9 10px solid;
+    /* border: #DDDFE9 10px solid; */
     border-radius: 10px;
   }
 
+  .QrCode img{
+    border-radius: 10px;
+    /* transition: height 1s ease-in-out; */
+    /* transition: width 0.5s ease-in-out,height 1s ease-in-out; */
+    opacity: 0;
+    height: 0;
+    position: relative;
+    bottom: 186px;
+    width: 0;
+    /* border: #DDDFE9 10px solid; */
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .QrCode h4{
+    border: #DDDFE9 10px solid;
+    border-radius: 10px;
+    padding:1%;
+  }
   .QrCode:hover img{
     opacity: 1;
+    height: max-content;
+    bottom: 250px;
+    width: 100%;
+    animation: slideInFromBottom 0.5s ease-in-out;
+    border: #DDDFE9 10px solid;
 }
-  
+
+.QrCode:hover h4{
+  opacity: 0;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+      transform: translateY(20%);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}

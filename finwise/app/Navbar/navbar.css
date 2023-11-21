@@ -1,17 +1,66 @@
+/* navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .navbar {
-    height: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 5%;
-    padding: 15px;
-    background: url('../Landing_page/bg_image.png') center/cover no-repeat;
-}
-.nav-right{
+    padding: 10px 20px;
+    color: black; 
+  }
+  
+  .logo {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    gap: 15%;
-    margin-top: 0.4rem;
-    padding: 15px;
+  }
+  
+  .logo img {
+    width: 40px; 
+    margin-right: 10px;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .nav-right {
+    display: flex;
+  }
+  
+  .nav-right a {
+    margin-left: 20px; 
+    text-decoration: none;
+    color: #021841;
+    font-weight: bold;
+    font-family: 'Poppins';
+    border: 2px solid rgb(90, 90, 94);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 2px gray;
+  }
+  
+  .nav-right a:hover {
+    text-decoration: underline;
+  }
+  
+  .team-link{
+    display: flex;
+    align-items: center;
+  }
+
+  .team-link img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.article-link{
+    display: flex;
+    align-items: center;
+}
+
+.article-link img{
+    width: 20px;
+    margin-right: 5px;
 }

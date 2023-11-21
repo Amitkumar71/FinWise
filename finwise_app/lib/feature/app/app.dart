@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../main/main_screen.dart';
+import 'splash_screen.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -13,7 +12,7 @@ class App extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const MainScreen(),
+      home: const SplashScreen(),
     );
   }
 }

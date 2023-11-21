@@ -9,24 +9,25 @@ import logo from './logo.svg'
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <div className="logo">
-        <Image src={logo} alt="Finwise Logo" width={40} height={40} />
+    <div className="logo">
+      <div className='nav-left'>
+        <img src="/money.svg" />
+        <Link href="/">Finwise</Link>
       </div>
-      <div className='nav-right'>
-
-        <Link href="/component1">
-          <div className="team-link">
-            <Image src={TeamIcon} alt="Team Icon" width={20} height={20} />
-            <span>Team</span>
-          </div>
-        </Link>
-        <Link href="/component2">
-        <div className="article-link">
-        <Image src={blogIcon} alt="Blog Icon" width={20} height={20} />
-        <span>Blog</span>
-        </div>
-        </Link>
-        <Link href="/component3">Privacy</Link>
+        </div> 
+        <div className='nav-right'>
+      <Link href="/">
+        Home
+      </Link>
+      <Link href="/component1">
+        Team 
+      </Link>
+      <Link href="/component2">
+        Blog
+      </Link>
+      <Link href="/component3">
+        Privacy
+      </Link>
       </div>
     </nav>
   );

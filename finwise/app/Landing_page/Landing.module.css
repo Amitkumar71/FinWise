@@ -13,7 +13,7 @@
   
   .content {
     text-align: center;
-    color: #20294C;
+    color: #182247;
     position: absolute;
     top: 0;
     left: 0;
@@ -22,24 +22,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-shadow: 2px 2px 2px rgb(155, 155, 175);
+    font-family: 'Poppins', sans-serif;
   }
   .content .data{
-    Font-size: 35px;
+    Font-size: 30px;
     width: 40%;
+    line-height: 1.4;
   }
   .content .data p{
     Font-size: 18px;
     margin-top: 25px;
+    color: rgb(72, 72, 150);
+    text-shadow: none;
   }
   .content img{
     height: 53vh;
     margin-top:-5%;
   }
   
-  .QrCode{
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  
+  .QrCode img{
+    position: absolute;
     bottom: 5px;
     right: 40%;
     height: 40px;
@@ -64,26 +68,5 @@
   .QrCode h4{
     border: #DDDFE9 10px solid;
     border-radius: 10px;
-    padding:1%;
   }
-  .QrCode:hover img{
-    opacity: 1;
-    height: max-content;
-    bottom: 250px;
-    width: 100%;
-    animation: slideInFromBottom 0.5s ease-in-out;
-    border: #DDDFE9 10px solid;
-}
-
-.QrCode:hover h4{
-  opacity: 0;
-}
-
-@keyframes slideInFromBottom {
-  0% {
-      transform: translateY(20%);
-  }
-  100% {
-      transform: translateY(0);
-  }
-}
+  

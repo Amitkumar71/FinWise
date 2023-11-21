@@ -1,10 +1,13 @@
 // Navbar.js
 import Link from 'next/link';
+import Image from 'next/image';
+import TeamIcon from './team-fill.svg';
+import blogIcon from './article-line.svg';
 import './navbar.css';
+import logo from './logo.svg'
 
 export default function Navbar() {
   return (
-    <>
     <nav className="navbar">
     <div className="logo">
       <div className='nav-left'>
@@ -27,6 +30,5 @@ export default function Navbar() {
       </Link>
       </div>
     </nav>
-    </>
   );
 }

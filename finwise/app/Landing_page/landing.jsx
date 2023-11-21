@@ -1,7 +1,7 @@
 import React from 'react';
+import Image from 'next/image'
 import styles from './Landing.module.css';
-// import image from "/photu.png";
-
+import landingImg from './landingimg.svg'
 const Landing = () => {
   return (
     <div className={styles.landing}>

@@ -1,5 +1,7 @@
+/* navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .navbar {
-    height: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,7 +11,6 @@
 }
 .nav-right{
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     gap: 15%;
     margin-top: 0.4rem;
